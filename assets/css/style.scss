@@ -1,0 +1,242 @@
+---
+---
+/* These are variables the Cayman theme defines */
+
+
+
+/* Headers */
+$header-heading-color: #ffffff;
+$header-bg-color: #ffffff;
+$header-bg-color-secondary: #ffffff;
+/* Footer */
+
+$footer-body: #000000;
+/* Text */
+$section-headings-color: #151515;;
+$body-text-color: #151515;;
+$body-link-color: #0066cc;
+$blockquote-text-color: #8dc396;
+
+/* Code */
+$code-bg-color: #f3f6fa;
+$code-text-color: #567482;
+
+/* Borders */
+$border-color: #dce6f0;
+$table-border-color: #e9ebec;
+$hr-border-color: #eff0f1;
+
+$nav-text-color: #aaaaaa;
+$nav-active-color: #ffffff;
+$nav-hover-color: lighten($nav-text-color, 50%);
+
+// link colors
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&family=Red+Hat+Display&display=swap');
+
+@import "{{ site.theme }}";
+@import "about-page";
+@import "project-page";
+@import "resources-page";
+@import "nav";
+@import "footer";
+@import "card";
+@import "filter";
+@import "home";
+
+#logo {
+    max-width: 832px;
+}
+//tablet screen 
+
+@media screen and (max-width: 1491px){
+    //body
+    .body-left, .body-right, .project-mic, .project-pen,.project-quote{
+        display: none;
+    }
+     .circle-photo-big,.circle-photo-small,.circle-project{
+        display: none;
+    }
+    .header.page-header-project{
+        height: 20px !important;
+    }
+    //screens
+    
+    // .resources-img,.about-banner{
+    //     display: none;
+    // }
+}
+// Mobile screen
+@media screen and (max-width: 800px){
+    //nav
+
+    .wrapper {
+       
+        z-index: 1;
+        .h-logo{
+            display: flex;
+            justify-content: center;
+            
+        }
+        nav {
+            background: rgba(rgb(0, 0, 0), 1);
+            ul.nav-menu {
+                
+                text-align: center;
+                padding-top: 50px;
+                font-size: 11px;
+                
+        }
+    }
+}
+
+    //banner
+
+    .page-header {
+        margin-top: 7.6em !important;
+        height: 330px !important;
+    }
+
+    //body
+    .body-left, .body-right{
+        display: none;
+    }
+
+    //footer
+    .f-title{
+        font-size: 1.8em;
+    }
+    .f-desc{
+        font-size: 16px !important; 
+    }
+    .f-text{
+        grid-template-rows: 50px 180px 10px !important;
+    }
+    .left-banner, .right-banner{
+        display: none;
+    }
+    
+    .footerLogo{
+        height: 25px !important;
+    }
+    .about-banner{
+        display: none;
+    }
+    .about-tagline{
+        position: absolute;
+        top: 120px;
+        left: -250px;
+        width: 300px;
+        
+        h1{
+            font-size: 28px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+    }
+    .resources-tagline{
+        position: absolute;
+        top: 120px;
+        left: -250px;
+        width: 300px;
+        
+        h1{
+            font-size: 28px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+    }
+    .project-tagline{
+        position: absolute;
+        top: 120px;
+        left: -150px;
+        width: 300px !important;
+        
+        h1{
+            font-size: 28px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+    }
+    .header.page-header-project{
+        height: 20px !important;
+    }
+    .circle-photo{
+        display: none;
+    }
+    .resources-img{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+  #logo {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 948px) {
+    #logo {
+      max-width: 100%;
+    }
+  }
+
+body {
+    background: #ffffff;
+    font-family: 'Red Hat Text', sans-serif;
+}
+.overflow{
+    margin-top: 25px !important;
+}
+.icon{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: #151515; 
+   font-family: 'Red Hat Display';
+}
+p{
+    font-family: 'Red Hat Text';
+}
+
+//About page
+
+// About page end
+
+//projects page
+
+
+//projects end
+
+
+//resources page
+
+
+//resources end
+
+
+
+//card
+
+
+  
+
+  
+  //filter 
+  
+

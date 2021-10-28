@@ -1,0 +1,27 @@
+theme: jekyll-theme-cayman
+hlogo: /assets/images/logo - light - stacked.svg
+logo: /assets/images/logo - light - horizontal.svg
+title: Contributor.Link
+baseurl: "/test-contributor" 
+url: "https://DineshkumarRavikumar.github.io"
+destination: ./docs
+
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "projects"
+
+
+sass:
+  sass_dir: assets/css
+  style: :compressed
